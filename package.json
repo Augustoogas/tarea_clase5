@@ -1,0 +1,23 @@
+{
+  "name": "clase-5-tarea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augustoogas/tarea_clase5.git"
+  },
+  "author": "Ogas Augusto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Augustoogas/tarea_clase5/issues"
+  },
+  "homepage": "https://github.com/Augustoogas/tarea_clase5#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
