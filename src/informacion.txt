@@ -1,0 +1,56 @@
+n sitios web o aplicaciones web dinámicas, que accedan a 
+bases de datos, el servidor espera a recibir peticiones HTTP del
+ navegador (o cliente). Cuando se recibe una petición, la aplicación
+  determina cuál es la acción adecuada correspondiente, de acuerdo a 
+  la estructura de la URL y a la información (opcional) indicada en 
+  la petición con los métodos POST o GET. Dependiendo de la acción a realizar, 
+  puede que se necesite leer o escribir en la base de datos, o realizar
+   otras acciones necesarias para atender la petición correctamente.
+    La aplicación ha de responder al navegador, normalmente, creando una
+     página HTML dinámicamente para él, en la que se muestre la información pedida, 
+     usualmente dentro de un 
+elemento especifico para este fin, en una plantilla HTML.
+
+Express posee métodos para especificar que función ha de ser
+ llamada dependiendo del verbo HTTP usado en la petición (GET, POST, SET, etc.) y
+  la estructura de la URL ("ruta"). También tiene los métodos para especificar que plantilla
+   ("view") o gestor de visualización utilizar, donde están guardadas las plantillas de HTML
+    que han de usarse y como generar la visualización adecuada para cada caso. El middleware 
+    de Express, puede usarse también para añadir funcionalidades para la gestión de cookies, 
+    sesiones y usuarios, mediante el uso de parámetros, en los métodos POST/GET. Puede utilizarse
+     además cualquier sistema de trabajo con bases de datos, que sea soportado por Node
+      (Express no especifica ningún método preferido para trabajar con bases de datos).
+
+
+      Un modulo es una librería o archivo JavaScript que puede ser importado dentro de otro código utilizando
+       la función require() de Node. Por sí mismo, Express es un modulo,
+       como lo son el middleware y las librerías de bases de datos que se utilizan en las aplicaciones Express.
+
+
+     
+La siguiente tabla enumera los primeros dígitos y permite ver las categorías correspondientes
+
+Código de estado 	Significado del valor numérico
+100-199	Informativo - La solicitud fue recibida y se está procesando.
+200-299	Éxito       - La acción fue recibida con éxito, entendido y aceptado.
+300-399	Redireción  - Otras peticiones hay que realizar para completar la petición.
+400-499	Error en Cliente - La solicitud contiene mala sintaxis y no pueden llevarse a cabo.
+500-599	Error de servidor - El servidor no pudo cumplir con una solicitud aparentemente válida.
+
+Un buen número de códigos de estado se han definido. Ellos también son extensibles
+, lo que permite a las aplicaciones extender el comportamiento del servidor. 
+Si una aplicación cliente no reconoce un código de estado devuelto por el servidor,
+ se puede determinar el significado general de la respuesta mediante el uso de la 
+ primera cifra de la devolución código de estado. La siguiente tabla recoge algunas de las 
+ respuesta más común los códigos de estado.
+Código Significado 
+OK-200 La solicitud éxito
+302 Movido temporalmente-La solicitud de residencia temporal en un URI. Si el nuevo URI es un ubicación,
+ la ubicación en el campo de encabezado de respuesta dará a la nueva URL. 
+ Este código normalmente se utiliza cuando el cliente se redirige
+400 Bad Request-El servidor no puede comprender la solicitud debido a un error de sintaxis.
+401-La solicitud no autorizada requiere autenticación y / o autorización.
+403 Forbidden-El servidor entiende la petición, pero por alguna razón se niega a cumplirlo.
+ El servidor puede o no puede revelar la razón por la que se niega la petición.
+404 Not Found-El servidor no ha encontrado nada que coinciden con el URI de solicitud.
+500-Internal Server Error "El servidor encontró un inesperado condición que le impidió el cumplimiento de la petición.
