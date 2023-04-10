@@ -15,7 +15,7 @@ const docentesRouter = require('./routes/docentes.routes');
 
 //cargamos la funcion de middleware
 app.use(express.json())
-app.use('/alumnos',docentesRouter.router);
+app.use('/docentes',docentesRouter.router);
 
 //app.LISTEN pone a escuchar al servidor en el puerto 3000
 app.listen(PORT, ()=>{console.log(`App lista escuhando en el puerto ${PORT}`)} );
